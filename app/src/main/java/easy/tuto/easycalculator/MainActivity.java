@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         String finalResult = getResult(dataToCalculate);
 
-        if(!finalResult.equals("Err")){
+        if(!finalResult.equals(" ")){
             result.setText(finalResult);
         }
 
@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
             return finalResult;
         }catch (Exception e){
-            return "";
+            return " ";
         }
     }
 
